@@ -104,9 +104,9 @@ const sectionContents = [
   ],
   [
     "Questions about the Terms of Service should be sent to us at ",
-    "Email: rasokartfoods@gamil.com",
-    "Address: JANKI BLOCK PRINTS JANKI HOUSE, PLOT NO 21-A (2), RAMDWARA COLONY-2, SANGANER, JAIPUR-302029",
-    "Phone: +91-7691097859",
+    "Email: info@rasokart.in",
+    "Address: SHOP NO F-5 227/228, MANGLAM TOWER, JAGNNATHPURI, KANTA CHAORAHA KALWAD ROAD, JAIPUR, RAJASTHAN 302012",
+    "Phone: +91 8092859634",
   ],
 ];
 
