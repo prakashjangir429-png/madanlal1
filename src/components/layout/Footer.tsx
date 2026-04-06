@@ -35,13 +35,13 @@ export default function Footer() {
   }, [baseUrl, referenceWebsite]);
 
   function slugify(text) {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')      // Replace spaces with hyphens
-    .replace(/[^\w-]+/g, '')   // Remove special characters
-    .replace(/--+/g, '-');     // Remove duplicate hyphens
-}
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .replace(/[^\w-]+/g, '')   // Remove special characters
+      .replace(/--+/g, '-');     // Remove duplicate hyphens
+  }
 
   return (
     <footer className="relative overflow-hidden">
@@ -205,28 +205,27 @@ export default function Footer() {
                 {categories.slice(0, 10).map((item, index) => (
                   <Link
                     key={item}
-                   to={`/category/${slugify(item)}`}
+                    to={`/category/${slugify(item)}`}
                     className="group flex items-center p-1  duration-300 "
-                    // style={{
-                    //   background: "rgba(157, 48, 137, 0.05)",
-                    // }}
-                    // onMouseEnter={(e) => {
-                    //   e.currentTarget.style.background =
-                    //     "rgba(157, 48, 137, 0.1)";
-                    //   e.currentTarget.style.transform = "translateX(8px)";
-                    // }}
-                    // onMouseLeave={(e) => {
-                    //   e.currentTarget.style.background =
-                    //     "rgba(157, 48, 137, 0.05)";
-                    //   e.currentTarget.style.transform = "translateX(0)";
-                    // }}
+                  // style={{
+                  //   background: "rgba(157, 48, 137, 0.05)",
+                  // }}
+                  // onMouseEnter={(e) => {
+                  //   e.currentTarget.style.background =
+                  //     "rgba(157, 48, 137, 0.1)";
+                  //   e.currentTarget.style.transform = "translateX(8px)";
+                  // }}
+                  // onMouseLeave={(e) => {
+                  //   e.currentTarget.style.background =
+                  //     "rgba(157, 48, 137, 0.05)";
+                  //   e.currentTarget.style.transform = "translateX(0)";
+                  // }}
                   >
                     <div
                       className="w-2 h-2 rounded-full mr-4 transition-all duration-300 group-hover:scale-125"
                       style={{
-                        background: `rgb(${157 + index * 10} ${
-                          48 + index * 5
-                        } ${137 - index * 10})`,
+                        background: `rgb(${157 + index * 10} ${48 + index * 5
+                          } ${137 - index * 10})`,
                       }}
                     ></div>
                     <span className="text-lg font-semibold text-gray-700 group-hover:text-purple-800 transition-colors">
@@ -265,14 +264,28 @@ export default function Footer() {
                     style={{ color: "rgb(157 48 137)" }}
                   />
                   <div>
-                    <h5 className="font-semibold text-gray-800 mb-1">
-                      Our Location
+                    <h5 className="font-semibold text-gray-800 mb-2">
+                      Our Locations
                     </h5>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                       SHOP NO F-5 227/228
-                      MANGLAM TOWER, JAGNNATHPURI, KANTA CHAORAHA KALWAD ROAD, JAIPUR, RAJASTHAN 302012
-                    </p>
-                   
+
+                    {/* Jaipur Address */}
+                    <div className="mb-3">
+                      <p className="text-gray-800 font-medium">Jaipur</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        SHOP NO F-5 227/228, MANGLAM TOWER, JAGNNATHPURI,
+                        KANTA CHAORAHA KALWAD ROAD, JAIPUR, RAJASTHAN 302012
+                      </p>
+                    </div>
+
+                    {/* Agra Address */}
+                    <div>
+                      <p className="text-gray-800 font-medium">
+                        Agra <span className="text-xs text-orange-500">(Opening Soon)</span>
+                      </p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Coming Soon – Agra, Uttar Pradesh
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4   ">
@@ -300,8 +313,8 @@ export default function Footer() {
                       Contact Us
                     </h5>
                     <p className="text-gray-600">
-                      <a href="tel:7691097859" className="hover:underline">
-                        +91-7691097859
+                      <a href="tel:8092859634" className="hover:underline">
+                        +91-8092859634
                       </a>
                     </p>
                   </div>
@@ -318,10 +331,10 @@ export default function Footer() {
                     </h5>
                     <p className="text-gray-600 text-sm">
                       <a
-                        href="mailto:rasokartfoods@gmail.com"
+                        href="mailto:info@rasokart.in"
                         className="hover:underline"
                       >
-                        rasokartfoods@gmail.com
+                        info@rasokart.in
                       </a>
                     </p>
                   </div>
@@ -362,7 +375,7 @@ export default function Footer() {
                     title: "Returns & Exchanges",
                     path: "/returns-and-exchange",
                   },
-                    {
+                  {
                     title: "Cookies",
                     path: "/cookies",
                   },
